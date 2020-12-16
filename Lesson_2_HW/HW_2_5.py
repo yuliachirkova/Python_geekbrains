@@ -11,23 +11,23 @@
 my_list = [8, 9, 3, 3, 2, 6]
 print(my_list)
 
-#Var 1 (была идея сделать так 1)добавить элемент в конец списка, затем отсортировать)
+#Var 1 (ошибка в коде исправлена с выводом в print)
 my_list = [8, 9, 3, 3, 2, 6]
 new_el = int(input("please insert your number: "))
-new_list = my_list.append(new_el)
+my_list.append(new_el)
+my_list.sort(reverse=True)
+print(my_list)
 
-#Var 2 (отчаявшись что апенд выдает None повторила решение по схеме другой группы, тоже провал)
+#Var 2 (ошибка в коде исправлена c выводом в принт)
 new_el = int(input("please insert your number: "))
 i = 0
 for el in my_list:
     if new_el <= el:
         i = i + 1
-new_list = my_list.insert(i, new_el)
-print(new_list)
+my_list.insert(i, new_el)
+print(my_list)
 
-#Тут какая-то фигня почему-то элемент не добавляется
-# в список функией append выдает результат None... extend тоже не работает и
-# этот вариант из подсказки в видео другой группы почему то Insert тоже возвращает None
+
 
 
 
