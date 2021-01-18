@@ -5,12 +5,12 @@
 
 my_list = list(input("Пожалуйста введите X любых значений:"))
 print(my_list)
-for el in range((len(my_list))//2):
+for el in range(0, (len(my_list))//2*2, 2):
     my_list[el], my_list[el+1] = my_list[el+1], my_list[el]
     el = el + 2
 print(my_list)
 
-#очень странно работает в итоге код.. меняет местами элементы,но не все соседние..
+
 
 
 
